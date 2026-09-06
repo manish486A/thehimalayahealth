@@ -25,7 +25,7 @@ export default function Navbar() {
     <>
       <nav id="main-nav">
         <a href="#" className="nav-logo">
-          <span className="nav-logo-dot"></span> healthynix
+          <span className="nav-logo-dot"></span> The Himalaya Health
         </a>
 
         <ul className="nav-links">
