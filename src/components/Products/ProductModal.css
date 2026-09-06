@@ -1,0 +1,75 @@
+/* ── PRODUCT MODAL ── */
+.product-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 31, 20, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.product-modal {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalIn 0.3s ease;
+}
+.product-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(13, 31, 20, 0.15);
+  z-index: 1;
+  transition: background 0.2s;
+}
+.product-modal-close:hover {
+  background: var(--foam);
+}
+.pm-photo {
+  background: var(--foam);
+  overflow: hidden;
+}
+.pm-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom center;
+}
+.pm-body {
+  padding: 2rem;
+}
+.pm-name {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--deep);
+  margin-bottom: 0.3rem;
+}
+.pm-price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--fern);
+  margin-bottom: 1.2rem;
+}
+.pm-desc {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: var(--mid);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}

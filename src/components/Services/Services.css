@@ -1,0 +1,123 @@
+/* ── SERVICES ── */
+.services-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+.svc {
+  border-radius: 16px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.svc:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(13, 31, 20, 0.12);
+}
+.svc-1 {
+  background: var(--deep);
+  border-color: transparent;
+}
+.svc-2 {
+  background: white;
+  border-color: rgba(46, 107, 66, 0.12);
+}
+.svc-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.svc-1 .svc-tag {
+  background: rgba(168, 212, 184, 0.15);
+  color: var(--mist);
+}
+.svc-2 .svc-tag {
+  background: var(--foam);
+  color: var(--fern);
+}
+.svc-title {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 0.8rem;
+}
+.svc-1 .svc-title {
+  color: white;
+}
+.svc-2 .svc-title {
+  color: var(--deep);
+}
+.svc-desc {
+  font-size: 0.85rem;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+}
+.svc-1 .svc-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.svc-2 .svc-desc {
+  color: var(--mid);
+}
+.svc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.svc-list li {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.svc-1 .svc-list li {
+  color: rgba(168, 212, 184, 0.8);
+}
+.svc-2 .svc-list li {
+  color: var(--mid);
+}
+.svc-list li::before {
+  content: "✓";
+  font-weight: 600;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+.svc-1 .svc-list li::before {
+  color: var(--leaf);
+}
+.svc-2 .svc-list li::before {
+  color: var(--fern);
+}
+.svc-num {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  font-family: var(--serif);
+  font-size: 5rem;
+  opacity: 0.05;
+  line-height: 1;
+}
+.svc-1 .svc-num {
+  color: white;
+}
+.svc-2 .svc-num {
+  color: var(--deep);
+}
+
+@media (max-width: 960px) {
+  .services-wrap {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,45 @@
+/* ── FAQ ── */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 3.5rem;
+}
+.faq-item {
+  background: white;
+  border: 1px solid rgba(46, 107, 66, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.faq-item:hover {
+  border-color: var(--leaf);
+}
+.faq-q {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--deep);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+.faq-icon {
+  color: var(--fern);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.faq-a {
+  font-size: 0.83rem;
+  line-height: 1.75;
+  color: var(--mid);
+  font-weight: 300;
+}
+
+@media (max-width: 960px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,74 @@
+/* ── SHARED SECTION UTILITIES ── */
+/* Used by Problem, Services, HowItWorks, Team, Proof, Faq, CtaAudit */
+
+.section {
+  padding: 6rem 3.5rem;
+}
+.section-alt {
+  background: var(--warm);
+}
+.section-dark {
+  background: var(--deep);
+  color: white;
+}
+.section-foam {
+  background: var(--foam);
+}
+
+.s-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fern);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.s-label::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: var(--fern);
+  border-radius: 1px;
+}
+
+.s-h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 400;
+  color: var(--deep);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.s-h2 em {
+  font-style: italic;
+  color: var(--fern);
+}
+.section-dark .s-h2 {
+  color: white;
+}
+.section-dark .s-label {
+  color: var(--mist);
+}
+.section-dark .s-label::before {
+  background: var(--mist);
+}
+
+.s-body {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--mid);
+  font-weight: 300;
+  max-width: 540px;
+}
+.section-dark .s-body {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 960px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+}

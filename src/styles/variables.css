@@ -1,0 +1,48 @@
+/* ── GLOBAL RESET & DESIGN TOKENS ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ink: #0d1f14;
+  --deep: #132b1a;
+  --pine: #1e4028;
+  --fern: #2e6b42;
+  --leaf: #4a9e64;
+  --mist: #a8d4b8;
+  --foam: #e8f5ed;
+  --snow: #f7faf8;
+  --gold: #c9a84c;
+  --warm: #f5f0e8;
+  --mid: #4a5e52;
+  --soft: #7a9484;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "Outfit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--snow);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--foam);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--fern);
+  border-radius: 3px;
+}
