@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <div className="footer-grid">
         <div>
-          <div className="footer-brand">healthynix</div>
+          <div className="footer-brand">The Himalaya Health</div>
           <p className="footer-tagline">
             Nepal's longevity and preventive medicine clinic — online, built for
             people who want to stay ahead of disease rather than chase it.
@@ -69,7 +69,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p className="footer-copy">© 2025 Healthynix. All rights reserved.</p>
+        <p className="footer-copy">
+          © 2025 The Himalaya Health. All rights reserved.
+        </p>
         <p className="footer-disc">
           This platform provides general health information and does not replace
           a formal medical consultation. All clinical services are provided by
