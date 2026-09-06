@@ -49,7 +49,7 @@ export default function Footer() {
               <a href="#how">How it works</a>
             </li>
             <li>
-              <a href="#proof">Outcomes</a>
+              <a href="#proof">Outcome</a>
             </li>
           </ul>
         </div>
